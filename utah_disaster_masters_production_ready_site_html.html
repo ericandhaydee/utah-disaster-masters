@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utah Disaster Masters | Disaster Recovery & Construction Consulting</title>
+  <meta name="description" content="Utah Disaster Masters – Trusted general construction consultants for water, fire, and storm damage recovery across Utah. 24/7 emergency response." />
+  <meta name="keywords" content="Utah disaster recovery, water damage restoration, fire damage repair, storm cleanup, construction consultants, Salt Lake City restoration" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.utahdisastermasters.com/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Utah Disaster Masters" />
+  <meta property="og:description" content="General construction consultants for disaster recovery. 24/7 emergency response in Utah." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.utahdisastermasters.com/" />
+  <meta property="og:image" content="/images/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind & Fonts -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- AOS (scroll animations) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    .hero-bg {
+      /* TODO: replace with your actual optimized image path */
+      background-image: image-set(
+        url('/images/hero-bg.webp') type('image/webp'),
+        url('/images/hero-bg.jpg') type('image/jpeg')
+      );
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .hero-overlay { background-color: rgba(0, 28, 56, 0.6); }
+    .section-title { border-bottom: 3px solid #3b82f6; padding-bottom: 0.5rem; display: inline-block; }
+    /* Smooth scrolling */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Skip to content -->
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 bg-blue-600 text-white px-3 py-2 rounded">Skip to content</a>
+
+  <!-- Header & Navigation -->
+  <header class="bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/70 sticky top-0 z-50 transition-shadow" role="banner">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Primary">
+      <a href="#" class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+        <i class="fas fa-shield-halved text-blue-600" aria-hidden="true"></i>
+        <span>Utah Disaster Masters</span>
+      </a>
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About Us</a>
+        <a href="#why-us" class="text-gray-700 hover:text-blue-600 transition">Why Choose Us</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+      </div>
+      <a href="#contact" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition shadow" aria-label="Get help now">Get Help Now</a>
+      <button id="mobile-menu-button" class="md:hidden text-gray-800" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
+        <i class="fas fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 border-t" role="dialog" aria-label="Mobile">
+      <a href="#services" class="block py-2 text-gray-700 hover:text-blue-600">Services</a>
+      <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">About Us</a>
+      <a href="#why-us" class="block py-2 text-gray-700 hover:text-blue-600">Why Choose Us</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+      <a href="#contact" class="block mt-2 bg-blue-600 text-white text-center px-5 py-2 rounded-lg hover:bg-blue-700 transition">Get Help Now</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero-bg text-white">
+      <div class="hero-overlay w-full h-full">
+        <div class="container mx-auto px-6 py-28 md:py-40 text-center" data-aos="fade-up">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">UTAH DISASTER MASTERS</h1>
+          <p class="text-lg md:text-2xl font-light text-gray-200 mb-8">Your Trusted General Construction Consultants for Disaster Recovery</p>
+          <a href="#contact" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition transform hover:scale-105 shadow-lg" aria-label="Request a free consultation">
+            Request a Free Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white scroll-mt-24">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="section-title text-3xl font-bold mb-12">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Service Card 1 -->
+          <article class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all" data-aos="fade-up">
+            <div class="text-blue-600 mb-4" aria-hidden="true">
+              <i class="fas fa-tint fa-3x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Water Damage Restoration</h3>
+            <p class="text-gray-600">Rapid response for water extraction, drying, and dehumidification to prevent further damage and mold.</p>
+          </article>
+          <!-- Service Card 2 -->
+          <article class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all" data-aos="fade-up" data-aos-delay="50">
+            <div class="text-red-500 mb-4" aria-hidden="true">
+              <i class="fas fa-fire-extinguisher fa-3x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Fire Damage Repair</h3>
+            <p class="text-gray-600">Comprehensive fire damage services including soot removal, smoke cleanup, and structural repairs.</p>
+          </article>
+          <!-- Service Card 3 -->
+          <article class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-yellow-500 mb-4" aria-hidden="true">
+              <i class="fas fa-wind fa-3x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Storm Damage Cleanup</h3>
+            <p class="text-gray-600">From fallen trees to roof repairs, we handle all aspects of storm and wind damage recovery.</p>
+          </article>
+          <!-- Service Card 4 -->
+          <article class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all" data-aos="fade-up" data-aos-delay="150">
+            <div class="text-green-500 mb-4" aria-hidden="true">
+              <i class="fas fa-hard-hat fa-3x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">General Construction</h3>
+            <p class="text-gray-600">Full-service construction and remodeling to rebuild and improve your property post-disaster.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 scroll-mt-24">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2" data-aos="fade-right">
+          <img src="/images/team.jpg" srcset="/images/team@0.5x.jpg 600w, /images/team.jpg 1200w" sizes="(max-width: 768px) 100vw, 50vw" alt="Utah Disaster Masters team on-site" class="rounded-xl shadow-2xl w-full h-auto" loading="lazy" />
+        </div>
+        <div class="md:w-1/2" data-aos="fade-left">
+          <h2 class="section-title text-3xl font-bold mb-6">About Utah Disaster Masters</h2>
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            We are a team of dedicated and experienced general construction consultants specializing in disaster recovery. Born and raised in Utah, we have a deep understanding of the local communities and the challenges they face.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Our mission is to help families and businesses recover and rebuild after unforeseen events. We pride ourselves on integrity, craftsmanship, and unwavering commitment—guiding clients through every step of the restoration process with compassion and expertise.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-white scroll-mt-24">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="section-title text-3xl font-bold mb-12">Why Choose Us?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center p-6" data-aos="zoom-in">
+            <div class="text-blue-600 mb-4" aria-hidden="true">
+              <i class="fas fa-clock fa-3x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">24/7 Emergency Service</h3>
+            <p class="text-gray-700">Disasters don't wait. Neither do we. We're available around the clock to respond to your needs.</p>
+          </div>
+          <div class="text-center p-6" data-aos="zoom-in" data-aos-delay="50">
+            <div class="text-blue-600 mb-4" aria-hidden="true">
+              <i class="fas fa-certificate fa-3x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Licensed & Insured</h3>
+            <p class="text-gray-700">Work with confidence knowing we are fully licensed, insured, and certified for all restoration work.</p>
+          </div>
+          <div class="text-center p-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="text-blue-600 mb-4" aria-hidden="true">
+              <i class="fas fa-map-marker-alt fa-3x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Local Utah Experts</h3>
+            <p class="text-gray-700">We know Utah. Our local expertise ensures a faster, more effective recovery process.</p>
+          </div>
+          <div class="text-center p-6" data-aos="zoom-in" data-aos-delay="150">
+            <div class="text-blue-600 mb-4" aria-hidden="true">
+              <i class="fas fa-thumbs-up fa-3x"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">100% Satisfaction</h3>
+            <p class="text-gray-700">We stand by our work and aren't satisfied until you are. Your peace of mind is our top priority.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800 text-white scroll-mt-24">
+      <div class="container mx-auto px-6">
+        <div class="text-center" data-aos="fade-up">
+          <h2 class="section-title text-3xl font-bold mb-4 text-white">Get in Touch</h2>
+          <p class="text-gray-300 mb-12">We're here to help. Fill out the form below or call us for immediate assistance.</p>
+        </div>
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-12">
+          <div class="md:w-1/2" data-aos="fade-right">
+            <!-- Formspree integration -->
+            <!-- TODO: Replace action URL with your Formspree form ID -->
+            <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4" novalidate>
+              <div>
+                <label for="name" class="block text-sm font-medium mb-1">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium mb-1">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+              <!-- Honeypot field -->
+              <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
+              <button type="submit" class="w-full bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Send Message</button>
+              <p id="form-message" class="mt-3 text-center text-sm"></p>
+            </form>
+          </div>
+          <div class="md:w-1/2 text-gray-300" data-aos="fade-left">
+            <h3 class="text-xl font-semibold text-white mb-4">Contact Information</h3>
+            <p class="flex items-center mb-3"><i class="fas fa-phone fa-fw mr-3 text-blue-400" aria-hidden="true"></i> <a class="hover:underline" href="tel:+18014206610">(801) 420-6610</a></p>
+            <p class="flex items-center mb-3"><i class="fas fa-envelope fa-fw mr-3 text-blue-400" aria-hidden="true"></i> <a class="hover:underline" href="mailto:help@utahdisastermasters.com">help@utahdisastermasters.com</a></p>
+            <p class="flex items-start"><i class="fas fa-map-marker-alt fa-fw mr-3 mt-1 text-blue-400" aria-hidden="true"></i> 123 Mountain View Rd,<br/>Salt Lake City, UT 84101</p>
+            <div class="mt-6">
+              <h4 class="text-lg font-semibold text-white mb-2">Business Hours</h4>
+              <p><strong>Emergency Services:</strong> 24/7</p>
+              <p><strong>Office Hours:</strong> Mon - Fri, 8am - 5pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8" role="contentinfo">
+    <div class="container mx-auto px-6 text-center">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="#" aria-label="Facebook" class="hover:text-white transition"><i class="fab fa-facebook-f fa-lg" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+        <a href="#" aria-label="Twitter" class="hover:text-white transition"><i class="fab fa-x-twitter fa-lg" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
+        <a href="#" aria-label="Instagram" class="hover:text-white transition"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+      </div>
+      <p>&copy; <span id="year">2025</span> Utah Disaster Masters. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+  <script>
+    // Wait for Tailwind and AOS to be ready
+    window.addEventListener('DOMContentLoaded', () => {
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenuButton?.addEventListener('click', () => {
+        const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+        mobileMenuButton.setAttribute('aria-expanded', String(!expanded));
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Header shadow on scroll
+      const header = document.querySelector('header');
+      const setHeaderShadow = () => header.classList.toggle('shadow-md', window.scrollY > 10);
+      setHeaderShadow();
+      window.addEventListener('scroll', setHeaderShadow, { passive: true });
+
+      // Form handling (Formspree AJAX)
+      const contactForm = document.getElementById('contact-form');
+      const formMessage = document.getElementById('form-message');
+      contactForm?.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        formMessage.textContent = '';
+        formMessage.className = 'mt-3 text-center text-sm text-gray-200';
+
+        const formData = new FormData(contactForm);
+        try {
+          const res = await fetch(contactForm.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
+          if (res.ok) {
+            formMessage.textContent = 'Thank you! Your message has been sent. We will get back to you shortly.';
+            formMessage.className = 'mt-3 text-center text-sm text-green-400';
+            contactForm.reset();
+          } else {
+            const data = await res.json().catch(() => ({}));
+            formMessage.textContent = data?.errors?.[0]?.message || 'Something went wrong. Please try again or email us directly.';
+            formMessage.className = 'mt-3 text-center text-sm text-red-400';
+          }
+        } catch (err) {
+          formMessage.textContent = 'Network error. Please check your connection or call us at (801) 420-6610.';
+          formMessage.className = 'mt-3 text-center text-sm text-red-400';
+        }
+        setTimeout(() => (formMessage.textContent = ''), 7000);
+      });
+
+      // Init AOS
+      if (window.AOS) {
+        AOS.init({ duration: 700, once: true, easing: 'ease-out-cubic' });
+      }
+
+      // Dynamic year
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+    });
+  </script>
+</body>
+</html>
